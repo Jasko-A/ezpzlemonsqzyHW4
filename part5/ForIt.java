@@ -13,7 +13,7 @@ public class ForIt implements SeqIt{
 	}
 
 	public boolean hasNext() {
-
+		
 		if(step > 0) {
 			if(tempNum <= last)
 				return true;
@@ -36,7 +36,7 @@ public class ForIt implements SeqIt{
 
 		if(!(hasNext())) {
 			throw new UsingIteratorPastEndException();
-			// System.exit(1);
+			//System.exit(1);
 		}
 
 		int temp = tempNum;	//stores element here so that it will be returned if it return true from hasNext()

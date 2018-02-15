@@ -16,7 +16,7 @@ public class FibIt implements SeqIt{
 	public boolean hasNext() {
 		if(temp1 <= last)
 			return true;
-		else
+		else 
 			return false;
 	}
 
@@ -24,7 +24,7 @@ public class FibIt implements SeqIt{
 		int t;
 		if(!(hasNext())) {
 			throw new UsingIteratorPastEndException();
-			// System.exit(1);
+			//System.exit(1);
 		}
 		t = temp1;
 		temp1 = temp2;
